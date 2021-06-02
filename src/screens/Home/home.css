@@ -1,0 +1,172 @@
+@media (min-width: 700px) {
+    .name-header {
+        font-size: xx-large;
+        font-weight: 400;
+    }
+
+    .avoidNav {
+        margin-top: 90px;
+    }
+
+    .top-pic-desc {
+        font-size: 40px;
+        align-self: center;
+        font-weight: bold;
+    }
+
+    .description-below{
+        text-align: left;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 23px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .description-below > p {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .description-below > h2 {
+        text-align: center;
+    }
+
+    .descriptionBlock {
+        flex-direction: row;
+        display: flex;
+        justify-content:space-between;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .descriptionBlock > p {
+        text-align: left;
+        font-size: 23px;
+    }
+
+    .project_img {
+        width: 400px;
+    }
+
+    .iphone-media {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .iphone-media > div > img {
+        max-width: 200px;
+    }
+
+    .iphone-media > div > p {
+        text-align: center;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 786px) {
+    .name-header {
+        font-size: x-large;
+        font-weight: 400;
+    }
+
+    .avoidNav {
+        margin-top: 90px;
+    }
+
+    .top-pic-desc {
+        font-size: 30px;
+        align-self: center;
+        font-weight: bold;
+    }
+
+    .description-below{
+        text-align: left;
+        margin: 20px;
+        font-size: 19px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .description-below > p {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .description-below > h2 {
+        text-align: center;
+    }
+
+    .description-below > h3 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .descriptionBlock {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .descriptionBlock > p {
+        text-align: left;
+        font-size: 19px;
+    }
+
+    .project_img {
+        width: 95vw;
+    }
+
+    .iphone-media {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .iphone-media > div > img {
+        max-width: 70vw;
+    }
+
+    .iphone-media > div > p {
+        text-align: center;
+        font-size: 19px;
+    }
+}
+
+.small-links > a{
+ padding-left: 7px;
+ margin-right: 7px;
+ text-decoration: none;
+}
+
+.description-below > p > a {
+    text-decoration: none;
+}
+
+.description-below > a {
+    text-decoration: none;
+}
+
+.descriptionBlock > a {
+    text-decoration: none;
+}
+
+.descriptionBlock > p > a {
+    text-decoration: none;
+}
+
+.changeup {
+    background: linear-gradient(to top,#2f2f2f 96%,#393939 100%);
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+

@@ -1,0 +1,198 @@
+@media (max-width: 786px) {
+    .navBar {
+        flex-direction: row;
+        display: flex;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(to top,#2f2f2f 96%,#393939 100%);
+    }
+    
+    .navBar:hover {
+        --hgt: 10vh;
+        --pdng: 5px;
+    }
+    
+    .selector {
+        height: 100%;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        opacity: 0.5;
+        transition: opacity .5s;
+    }
+    
+    .selector:hover {
+        opacity: 1;
+    }
+    
+    .uw-logo {
+        height: var(--hgt, 10vh);
+        transition: .2s  all;
+        padding: var(--pdng, 5px);
+    }
+    
+    .selectorLink {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .mobileNavBar {
+        justify-content: flex-end;
+        display: flex;
+        
+    }
+    .mobileNavBarText {
+        flex-direction: row;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .dropDownMenu {
+        display: flex;
+        flex-direction: column;
+        transition: '2s all'; 
+        position: fixed; 
+        z-index: 2; 
+        left: 0px; 
+        background: linear-gradient(to left,#2f2f2f 96%,#393939 100%); 
+        flex: 1; 
+        top: 10vh;
+        width: 100vw;
+    }
+    
+    .innerText {
+        padding: 5px;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    
+    .mobileMenuIcon {
+        height: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+        align-self: center;
+        transition: .3s all;
+    }
+    
+    .mobileNavContainer {
+        flex: 1;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dropDownBox {
+        flex-direction: column;
+        align-self: flex-end;
+        z-index: 2;
+        border: 1px solid black;
+        position: relative;
+    }
+}
+
+@media (min-width: 700px) {
+    .navBar {
+        flex-direction: row;
+        display: flex;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(to top,#2f2f2f 96%,#393939 100%);
+    }
+    
+    .navBar:hover {
+        --hgt: 10vh;
+        --pdng: 5px;
+    }
+    
+    .selector {
+        height: 100%;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        opacity: 0.5;
+        transition: opacity .5s;
+    }
+    
+    .selector:hover {
+        opacity: 1;
+    }
+    
+    .uw-logo {
+        height: var(--hgt, 6vh);
+        transition: .2s  all;
+        padding: var(--pdng, 5px);
+    }
+    
+    .selectorLink {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .mobileNavBar {
+        justify-content: flex-end;
+        display: flex;
+        
+    }
+    .mobileNavBarText {
+        flex-direction: row;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .dropDownMenu {
+        display: flex;
+        flex-direction: column;
+        transition: '2s all'; 
+        position: fixed; 
+        z-index: 2; 
+        left: 0px; 
+        background: linear-gradient(to left,#2f2f2f 96%,#393939 100%); 
+        flex: 1; 
+        top: 70px;
+    }
+    
+    .innerText {
+        padding: 5px;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    
+    .mobileMenuIcon {
+        height: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+        align-self: center;
+        transition: .3s all;
+    }
+    
+    .mobileNavContainer {
+        flex: 1;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dropDownBox {
+        flex-direction: column;
+        align-self: flex-end;
+        z-index: 2;
+        border: 1px solid black;
+        position: relative;
+    }
+}

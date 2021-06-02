@@ -1,0 +1,33 @@
+.footer-container {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background: linear-gradient(to bottom, #7d7d7d, #8F8F8F);
+    color: whitesmoke;
+}
+
+.footer-container > p {
+    font-size: 15px;
+    font-weight: bold;
+    opacity: .8;
+}
+
+.footer-container > p > a {
+    text-decoration: none;
+}
+
+.footer-div {
+    flex-direction: row;
+}
+
+.footerIcon {
+    width: 30px;
+    opacity: var(--linked, .5);
+    transition: .3s all;
+    margin: 5px;
+    cursor: pointer;
+}
+ 
+.footerIcon:hover{
+    --linked: 1;
+}

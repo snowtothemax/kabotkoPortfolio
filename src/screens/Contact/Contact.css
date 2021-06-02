@@ -1,0 +1,40 @@
+.contactContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.innerBody {
+    margin: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.innerBody > p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.innerBody > p > a {
+    text-decoration: none;
+}
+
+.cardContainer {
+    margin-top: 20px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.linkedInIcon {
+    width: 52px;
+    opacity: var(--linked, .5);
+    transition: .3s all;
+    margin-right: 20px;
+    cursor: pointer;
+}
+ 
+.linkedInIcon:hover{
+    --linked: 1;
+}
