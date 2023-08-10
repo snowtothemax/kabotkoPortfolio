@@ -14,7 +14,7 @@
         font-weight: bold;
     }
 
-    .description-below{
+    .description-below {
         text-align: left;
         margin-left: 25%;
         margin-right: 25%;
@@ -23,28 +23,73 @@
         margin-bottom: 40px;
     }
 
-    .description-below > p {
+    .description-below>p {
         margin-top: 15px;
         margin-bottom: 30px;
     }
 
-    .description-below > h2 {
+    .description-below>h2 {
         text-align: center;
     }
 
     .descriptionBlock {
         flex-direction: row;
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         margin-left: 25%;
         margin-right: 25%;
         margin-bottom: 30px;
         margin-top: 30px;
     }
 
-    .descriptionBlock > p {
+    .homeImageGridContainer_container {
+        margin-right: 25%;
+        margin-left: 25%;
+        margin-bottom: 30px;
+    }
+
+    .homeImageGridContainer_top {
+        display: grid;
+        grid-template-columns: 1fr 2.25fr;
+        column-gap: 10px;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .homeImageGridContainer_bottom {
+        display: grid;
+        grid-template-columns: 2.25fr 1fr;
+        column-gap: 10px;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: flex-start;
+    }
+
+    .descriptionBlock>p {
         text-align: left;
         font-size: 23px;
+    }
+
+    .imageDescriptionContainer {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imageDescription {
+        flex: 1;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageDescriptionImage {
+        width: 40%;
+        margin-right: 20%;
+        border-radius: 10px;
     }
 
     .project_img {
@@ -57,11 +102,11 @@
         justify-content: space-evenly;
     }
 
-    .iphone-media > div > img {
+    .iphone-media>div>img {
         max-width: 200px;
     }
 
-    .iphone-media > div > p {
+    .iphone-media>div>p {
         text-align: center;
         font-size: 19px;
     }
@@ -83,7 +128,7 @@
         font-weight: bold;
     }
 
-    .description-below{
+    .description-below {
         text-align: left;
         margin: 20px;
         font-size: 19px;
@@ -91,16 +136,16 @@
         margin-bottom: 30px;
     }
 
-    .description-below > p {
+    .description-below>p {
         margin-top: 15px;
         margin-bottom: 30px;
     }
 
-    .description-below > h2 {
+    .description-below>h2 {
         text-align: center;
     }
 
-    .description-below > h3 {
+    .description-below>h3 {
         margin-top: 10px;
         margin-bottom: 15px;
     }
@@ -114,9 +159,29 @@
         margin-bottom: 30px;
         margin-top: 30px;
     }
-    .descriptionBlock > p {
+
+    .descriptionBlock>p {
         text-align: left;
         font-size: 19px;
+    }
+
+    .imageDescriptionContainer {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imageDescription {
+        flex: 1;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageDescriptionImage {
+        width: 40%;
+        margin-right: 20%;
     }
 
     .project_img {
@@ -129,44 +194,41 @@
         align-items: center;
     }
 
-    .iphone-media > div > img {
+    .iphone-media>div>img {
         max-width: 70vw;
     }
 
-    .iphone-media > div > p {
+    .iphone-media>div>p {
         text-align: center;
         font-size: 19px;
     }
 }
 
-.small-links > a{
- padding-left: 7px;
- margin-right: 7px;
- text-decoration: none;
-}
-
-.description-below > p > a {
+.small-links>a {
+    padding-left: 7px;
+    margin-right: 7px;
     text-decoration: none;
 }
 
-.description-below > a {
+.description-below>p>a {
     text-decoration: none;
 }
 
-.descriptionBlock > a {
+.description-below>a {
     text-decoration: none;
 }
 
-.descriptionBlock > p > a {
+.descriptionBlock>a {
+    text-decoration: none;
+}
+
+.descriptionBlock>p>a {
     text-decoration: none;
 }
 
 .changeup {
-    background: linear-gradient(to top,#2f2f2f 96%,#393939 100%);
+    background: linear-gradient(to top, #2f2f2f 96%, #393939 100%);
     color: whitesmoke;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-
-

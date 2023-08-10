@@ -36,7 +36,7 @@ export default class AboutScreen extends React.Component<
             </p>
             <img
               src={captainService}
-              alt="captain=service"
+              alt="captain service"
               className="project_img"
             />
           </div>

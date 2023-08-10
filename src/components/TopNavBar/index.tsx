@@ -46,21 +46,12 @@ export default class TopNavigationBar extends React.Component<
         this.setState({ selected: SelectorTypes.GALLERY });
     }
   }
-  homeOnClick = () => {
-    this.setState({ selected: SelectorTypes.HOME });
-  };
-  aboutOnClick = () => {
-    this.setState({ selected: SelectorTypes.ABOUT });
-  };
-  projectsOnClick = () => {
-    this.setState({ selected: SelectorTypes.PROJECTS });
-  };
-  contactOnClick = () => {
-    this.setState({ selected: SelectorTypes.CONTACT });
-  };
-  galleryOnClick = () => {
-    this.setState({ selected: SelectorTypes.GALLERY });
-  };
+
+  linkOnClick = (selector: SelectorTypes) => {
+    this.setState({ selected: selector, navSelected: false}, () => {
+      window.scrollTo({top: 0});
+    })
+  }
   mobileNavBarOnClick = () => {
     const { navSelected } = this.state;
     this.setState({ navSelected: !navSelected });
@@ -79,19 +70,19 @@ export default class TopNavigationBar extends React.Component<
               text="Home"
               selected={selected === SelectorTypes.HOME}
               to={"/"}
-              onClick={this.homeOnClick}
+              onClick={() => this.linkOnClick(SelectorTypes.HOME)}
             />
             <Selector
               text="About"
               selected={selected === SelectorTypes.ABOUT}
               to={"/about"}
-              onClick={this.aboutOnClick}
+              onClick={() => this.linkOnClick(SelectorTypes.ABOUT)}
             />
             <Selector
               text="Projects"
               selected={selected === SelectorTypes.PROJECTS}
               to={"/projects"}
-              onClick={this.projectsOnClick}
+              onClick={() => this.linkOnClick(SelectorTypes.PROJECTS)}
             />
             {/* <Selector
               text="Gallery"
@@ -103,7 +94,7 @@ export default class TopNavigationBar extends React.Component<
               text="Contact"
               selected={selected === SelectorTypes.CONTACT}
               to={"/contact"}
-              onClick={this.contactOnClick}
+              onClick={() => this.linkOnClick(SelectorTypes.CONTACT)}
             />
           </MediaQuery>
           <MediaQuery maxWidth={786}>
@@ -138,19 +129,19 @@ export default class TopNavigationBar extends React.Component<
                 text="Home"
                 selected={selected === SelectorTypes.HOME}
                 to={"/"}
-                onClick={this.homeOnClick}
+                onClick={() => this.linkOnClick(SelectorTypes.HOME)}
               />
               <Selector
                 text="About"
                 selected={selected === SelectorTypes.ABOUT}
                 to={"/about"}
-                onClick={this.aboutOnClick}
+                onClick={() => this.linkOnClick(SelectorTypes.ABOUT)}
               />
               <Selector
                 text="Projects"
                 selected={selected === SelectorTypes.PROJECTS}
                 to={"/projects"}
-                onClick={this.projectsOnClick}
+                onClick={() => this.linkOnClick(SelectorTypes.PROJECTS)}
               />
               {/* <Selector
                 text="Gallery"
@@ -162,7 +153,7 @@ export default class TopNavigationBar extends React.Component<
                 text="Contact"
                 selected={selected === SelectorTypes.CONTACT}
                 to={"/contact"}
-                onClick={this.contactOnClick}
+                onClick={() => this.linkOnClick(SelectorTypes.CONTACT)}
               />
             </div>
           )}

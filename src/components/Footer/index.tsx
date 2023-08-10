@@ -56,9 +56,9 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
           </a>
         </div>
         <p>
-          <Link to={process.env.PUBLIC_URL + '/files/MaxJohnsonResume.pdf'} target="_blank" download>
+          <a href='/files/MaxJohnsonResume.pdf' target="_blank" download>
             Resume
-          </Link>
+          </a>
         </p>
       </div>
     );
