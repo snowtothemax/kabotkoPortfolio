@@ -47,6 +47,10 @@ export default class HomeScreen extends React.Component<
       <div className="container-fluid" style={{ padding: 0 }}>
         <div className="avoidNav">
           <h1 className="page-header">Max Johnson</h1>
+          <p className="small-links">
+            <a href="/#interests">Interests</a>{" "}
+            <a href="/#aboutme">A bit about me</a>{" "}
+          </p>
           <div className="homeImageGridContainer_container">
             <div className="homeImageGridContainer_top">
               <img src={proPic} style={{ width: "100%", borderRadius: 10 }} />
@@ -57,8 +61,8 @@ export default class HomeScreen extends React.Component<
               <img src={meNapa} style={{ width: "100%", borderRadius: 10 }} />
             </div>
           </div>
-          {<div className="changeup" style={{ transition: '.7s all', transform: isVisible ? 'translate(0,0)' : 'translate(0,100vh)' }}>
-            <div className="description-below">
+          {<div className="changeup">
+            <div className="description-below" id="interests">
               <h3>Interests</h3>
               <div className="imageDescriptionContainer">
                 <div className="imageDescription">
