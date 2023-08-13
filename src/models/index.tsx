@@ -1,5 +1,5 @@
 export enum SelectorTypes {
-    ABOUT = '/about',
+    EXPERIENCE = '/experience',
     GALLERY = '/gallery',
     PROJECTS = '/projects',
     CONTACT = '/contact',

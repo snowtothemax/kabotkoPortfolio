@@ -28,7 +28,7 @@ export function Routes(props: Props) {
   window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
   return (
     <Switch>
-      <Route path={"/about"} component={AboutScreen} />
+      <Route path={"/experience"} component={AboutScreen} />
       <Route path={"/projects"} component={ProjectScreen} />
       <Route path={"/gallery"} component={GalleryScreen} />
       <Route path={"/contact"} component={ContactScreen} />

@@ -1,10 +1,10 @@
 import React from "react";
 import "../Home/home.css";
 
-interface ProjectScreenProps {}
+interface ProjectScreenProps { }
 
 interface ProjectScreenState {
-    forFunVisible: boolean;
+  forFunVisible: boolean;
 }
 
 export default class ProjectScreen extends React.Component<
@@ -15,7 +15,7 @@ export default class ProjectScreen extends React.Component<
     super(props);
 
     this.state = {
-        forFunVisible: false,
+      forFunVisible: false,
     };
   }
 
@@ -23,13 +23,12 @@ export default class ProjectScreen extends React.Component<
     this.setState({ forFunVisible: true })
   }
 
-  componentWillUnmount()
-  {
-    this.setState({forFunVisible: false })
+  componentWillUnmount() {
+    this.setState({ forFunVisible: false })
   }
 
   render() {
-    const {forFunVisible} = this.state;
+    const { forFunVisible } = this.state;
     return (
       <div className="container-fluid" style={{ padding: 0, overflow: "hidden" }}>
         <div className="avoidNav">
@@ -39,7 +38,7 @@ export default class ProjectScreen extends React.Component<
           </p>
           <h6>more coming soon</h6>
         </div>
-        <div className="changeup" style={{transition: '.7s all', transform: forFunVisible ? 'translate(0)' : 'translate(100vw)'}}>
+        <div className="changeup" style={{ transition: '.7s all', transform: forFunVisible ? 'translate(0)' : 'translate(100vw)' }}>
           <div className="description-below">
             <h2 id="fun">For Fun</h2>
             <h3>Mosaic Marketplace</h3>

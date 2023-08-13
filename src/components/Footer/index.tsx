@@ -5,6 +5,7 @@ import linkedinIcon from "../../assets/linkedIn.png";
 import emailIcon from "../../assets/emailIcon.png";
 
 import "./footer.css";
+import { ResumeLink } from "../../screens/general";
 
 interface FooterProps {}
 
@@ -56,9 +57,7 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
           </a>
         </div>
         <p>
-          <a href="https://portfolio-content-bucket.s3.us-east-2.amazonaws.com/MaxJohnsonResume.pdf" target="_blank" download>
-            Resume
-          </a>
+          <ResumeLink />
         </p>
       </div>
     );

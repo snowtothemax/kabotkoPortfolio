@@ -34,7 +34,7 @@ export default class TopNavigationBar extends React.Component<
         this.setState({ selected: SelectorTypes.HOME });
         break;
       case "/about":
-        this.setState({ selected: SelectorTypes.ABOUT });
+        this.setState({ selected: SelectorTypes.EXPERIENCE });
         break;
       case "/contact":
         this.setState({ selected: SelectorTypes.CONTACT });
@@ -73,10 +73,10 @@ export default class TopNavigationBar extends React.Component<
               onClick={() => this.linkOnClick(SelectorTypes.HOME)}
             />
             <Selector
-              text="About"
-              selected={selected === SelectorTypes.ABOUT}
-              to={"/about"}
-              onClick={() => this.linkOnClick(SelectorTypes.ABOUT)}
+              text="Experience"
+              selected={selected === SelectorTypes.EXPERIENCE}
+              to={"/experience"}
+              onClick={() => this.linkOnClick(SelectorTypes.EXPERIENCE)}
             />
             <Selector
               text="Projects"
@@ -124,7 +124,7 @@ export default class TopNavigationBar extends React.Component<
         </div>
         <MediaQuery maxWidth={786}>
           {navSelected && (
-            <div className="dropDownMenu" style={{ height: height }}>
+            <div className="dropDownMenu" style={{ height: height, transition: ".7s all" }}>
               <Selector
                 text="Home"
                 selected={selected === SelectorTypes.HOME}
@@ -132,10 +132,10 @@ export default class TopNavigationBar extends React.Component<
                 onClick={() => this.linkOnClick(SelectorTypes.HOME)}
               />
               <Selector
-                text="About"
-                selected={selected === SelectorTypes.ABOUT}
-                to={"/about"}
-                onClick={() => this.linkOnClick(SelectorTypes.ABOUT)}
+                text="Experience"
+                selected={selected === SelectorTypes.EXPERIENCE}
+                to={"/experience"}
+                onClick={() => this.linkOnClick(SelectorTypes.EXPERIENCE)}
               />
               <Selector
                 text="Projects"
