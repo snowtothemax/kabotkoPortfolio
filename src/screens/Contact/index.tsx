@@ -10,6 +10,7 @@ import facebookIcon from "../../assets/facebook.png";
 import githubIcon from "../../assets/github-footer.png";
 import instaIcon from "../../assets/insta.png";
 import linkedinIcon from "../../assets/linkedIn.png";
+import { ResumeLink } from "../general";
 
 interface ContactScreenProps {}
 
@@ -67,7 +68,7 @@ export default class ContactScreen extends React.Component<
                 snowtothemax
               </a>
             </div>
-            <p><Link to="/files/MaxJohnsonResume.pdf" target="_blank" download>Resume</Link></p>
+            <p><ResumeLink /></p>
           </div>
         </div>
       </div>

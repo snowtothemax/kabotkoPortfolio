@@ -1,8 +1,5 @@
 import React from "react";
 import "../Home/home.css";
-import gallery from "../../assets/mosaicGallery.png";
-import collections from "../../assets/mosaicCollections.png";
-import profile from "../../assets/mosaicProfile.png";
 
 interface ProjectScreenProps {}
 
@@ -23,21 +20,13 @@ export default class ProjectScreen extends React.Component<
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.toggleVisible);
+    this.setState({ forFunVisible: true })
   }
 
-  componentWillUnmount() {
-      window.removeEventListener("scroll", this.toggleVisible);
+  componentWillUnmount()
+  {
+    this.setState({forFunVisible: false })
   }
-
-  toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 10) {
-      this.setState({ forFunVisible: true });
-    } else if (scrolled <= 10) {
-      this.setState({ forFunVisible: false });
-    }
-  };
 
   render() {
     const {forFunVisible} = this.state;
@@ -61,15 +50,15 @@ export default class ProjectScreen extends React.Component<
             </p>
             <div className="iphone-media">
               <div>
-                <img src={gallery} alt="gallery" />
+                <img src="https://portfolio-content-bucket.s3.us-east-2.amazonaws.com/mosaicGallery.png" alt="gallery" />
                 <p>Gallery view</p>
               </div>
               <div>
-                <img src={collections} alt="collections" />
+                <img src="https://portfolio-content-bucket.s3.us-east-2.amazonaws.com/mosaicCollections.png" alt="collections" />
                 <p>Collections view</p>
               </div>
               <div>
-                <img src={profile} alt="collections" />
+                <img src="https://portfolio-content-bucket.s3.us-east-2.amazonaws.com/mosaicProfile.png" alt="collections" />
                 <p>Profile view</p>
               </div>
             </div>
