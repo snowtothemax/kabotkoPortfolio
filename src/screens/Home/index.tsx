@@ -97,7 +97,7 @@ export default class HomeScreen extends React.Component<
                   I program!
                 </p>
                 <p>
-                  You can read more about this in my <a href="/about">About</a> and <a href="/projects">Projects</a> pages.
+                  You can read more about this in my <a href="/experience">Experience</a> and <a href="/projects">Projects</a> pages.
                 </p>
               </ImageDescriptionWithParagraphs>
             </div>

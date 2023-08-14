@@ -33,7 +33,7 @@ export default class TopNavigationBar extends React.Component<
       case "/":
         this.setState({ selected: SelectorTypes.HOME });
         break;
-      case "/about":
+      case "/experience":
         this.setState({ selected: SelectorTypes.EXPERIENCE });
         break;
       case "/contact":
