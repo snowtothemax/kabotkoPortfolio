@@ -55,10 +55,10 @@ export default class AboutScreen extends React.Component<
               from an Oracle database.
             </p>
             <h4>Experience</h4>
-            <li>Implementing features to display heavy logistical data.</li>
+            <li>Implemented features to configure and display truck load data.</li>
             <li>Fixing possible security flaws in company applications.</li>
-            <li>Creating communication between large applications.</li>
-            <li>Writing Oracle procedures to audit database activity.</li>
+            <li>Create APIs and background processes to run application jobs that handled bulk actions </li>
+            <li></li>
           </div>
         </div>
         <div className="changeup">
