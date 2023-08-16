@@ -104,7 +104,7 @@ export default class ProjectScreen extends React.Component<
               This processor was designed by Aksel Torgerson, Reid Brostoff and Alec Kheibler.
               You can download the paper above, and check out the github below!
               <br/>
-              <a href="https://github.com/snowtothemax/ECE551FinalProject">
+              <a href="https://github.com/akseltorgerson/ECE554-Capstone">
                 FFT Accelerated Processor Github
               </a>
             </p>
